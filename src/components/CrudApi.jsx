@@ -31,7 +31,7 @@ export const CrudApi = () => {
   }, [url]);
 
   const createData = (data) => {
-    data.id = Date.now();
+    data.id = Date.now().toString();
     let options = {  
       body: data, 
       headers:{
